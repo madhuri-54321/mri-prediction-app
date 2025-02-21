@@ -1,5 +1,7 @@
 !pip install cv2
 !pip install numpy
+!pip install os
+!pip install tensorflow
 import os
 import numpy as np
 import cv2
