@@ -38,7 +38,7 @@ def extract_features(image):
     return np.hstack([cnn_feature, glcm_feature])
 
 # Corrected dataset path
-dataset_path = r"mri-prediction-app/data/Alzheimer_s Dataset/test/ModerateDemented"
+dataset_path = r"mri-prediction-app/data/ModerateDemented"
 
 # Ensure dataset path exists
 if not os.path.exists(dataset_path):
