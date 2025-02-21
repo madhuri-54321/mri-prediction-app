@@ -39,7 +39,7 @@ def extract_features(image):
 
 # Corrected dataset path
 dataset_path = os.path.join(os.getcwd(), "ModerateDemented")
-
+print(f"Checking dataset path: {dataset_path}")
 # Ensure dataset path exists
 if not os.path.exists(dataset_path):
     raise FileNotFoundError(f"Dataset path does not exist: {dataset_path}")
