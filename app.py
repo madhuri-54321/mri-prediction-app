@@ -1,4 +1,5 @@
 import os
+print("Current Working Directory:", os.getcwd())
 import numpy as np
 import cv2
 import tensorflow as tf
