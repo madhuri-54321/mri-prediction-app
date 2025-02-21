@@ -16,6 +16,8 @@ st.set_page_config(layout="wide")  # Mobile-friendly layout
 def load_model():
     base_model = EfficientNetB0(weights="imagenet", include_top=False, input_shape=(224, 224, 3))
     return tf.keras.models.Model(inputs=base_model.input, outputs=tf.keras.layers.GlobalAveragePooling2D()(base_model.output))
+    
+print(f"Checking dataset path: os.path.join(os.getcwd(), "ModerateDemented"))
 
 model = load_model()
 IMG_SIZE = (224, 224)
@@ -39,7 +41,7 @@ def extract_features(image):
 
 # Corrected dataset path
 dataset_path = os.path.join(os.getcwd(), "ModerateDemented")
-print(f"Checking dataset path: {dataset_path}")
+
 # Ensure dataset path exists
 if not os.path.exists(dataset_path):
     raise FileNotFoundError(f"Dataset path does not exist: {dataset_path}")
