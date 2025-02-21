@@ -1,5 +1,4 @@
 import os
-print("Current Working Directory:", os.getcwd())
 import numpy as np
 import cv2
 import tensorflow as tf
@@ -41,7 +40,7 @@ def extract_features(image):
     return np.hstack([cnn_feature, glcm_feature])
 
 # Corrected dataset path
-dataset_path = r"ModerateDemented"
+dataset_path = r"madhuri-54321/mri-prediction-app/ModerateDemented"
 
 # Ensure dataset path exists
 if not os.path.exists(dataset_path):
