@@ -1,0 +1,7 @@
+streamlit
+tensorflow
+opencv-python
+scikit-image
+scikit-learn
+qrcode
+pillow
