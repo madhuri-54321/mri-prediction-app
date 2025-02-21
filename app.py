@@ -1,4 +1,5 @@
 !pip install cv2
+!pip install numpy
 import os
 import numpy as np
 import cv2
